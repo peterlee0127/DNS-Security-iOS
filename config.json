@@ -1,0 +1,45 @@
+{
+    "config":[
+    {
+        "name": "cloudflare-DOT",
+        "servers": [ "1.1.1.1" ],
+        "serverName": "cloudflare-dns.com"
+    },
+    {
+        "name": "cloudflare-DOH",
+        "servers": [ "1.1.1.1" ],
+        "serverName": "https://1.1.1.1/dns-query"
+    },
+    {
+        "name": "google-DOT",
+        "servers": [ "8.8.8.8", "8.8.4.4"],
+        "serverName": "dns.google"
+    },
+    {
+        "name": "google-DOH",
+        "servers": [ "8.8.8.8", "8.8.4.4"],
+        "serverName": "https://dns.google/dns-query"
+    },
+    {
+        "name": "Adguard-DOH",
+        "servers": [ "94.140.14.14", "94.140.15.15"],
+        "serverName": "https://dns.adguard.com/dns-query"
+    },
+    {
+        "name": "Adguard-DOT",
+        "servers": [ "94.140.14.14", "94.140.15.15"],
+        "serverName": "dns.adguard.com"
+        
+    },
+    {
+        "name": "OpenDNS-with-familyshield-DOH",
+        "servers": [ "208.67.222.123", "208.67.220.123"],
+        "serverName": "https://doh.familyshield.opendns.com/dns-query"
+    },
+    {
+        "name": "OpenDNS-DOH",
+        "servers": [ "208.67.222.222", "208.67.220.220"],
+        "serverName": "https://doh.opendns.com/dns-query"
+    }
+    ]
+}
