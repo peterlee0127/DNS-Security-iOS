@@ -21,12 +21,12 @@
         "serverName": "https://dns.google/dns-query"
     },
     {
-        "name": "Adguard-DOH",
+        "name": "AdGuard-DOH",
         "servers": [ "94.140.14.14", "94.140.15.15"],
         "serverName": "https://dns.adguard.com/dns-query"
     },
     {
-        "name": "Adguard-DOT",
+        "name": "AdGuard-DOT",
         "servers": [ "94.140.14.14", "94.140.15.15"],
         "serverName": "dns.adguard.com"
         
