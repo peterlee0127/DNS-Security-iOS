@@ -2,33 +2,33 @@
 
 <div style="text-align:center"><a href='https://apps.apple.com/us/app/id1533938029'><img src="mac_logo.png" width='200px' style='alignment:center'></a></div>
 
-#### First app use iOS 14 new feature DNS over HTTPS or DOT without install any VPN config!!
+#### The First app uses iOS 14 new feature DNS over HTTPS or DOT without installing any VPN config!!
 Secure your DNS query without touch your network connection.
 
-### Do you know ? What's DNS over HTTPS/TLS ?
+### Do you know? What's DNS over HTTPS/TLS ?
 
-Even if you are visiting a site with HTTPS, your DNS query is sent over an unencrypted connection. That means that even if you are any website with HTTPS. Anyone listening to packets on the network still can know you are visiting some website. It is easy for a Man-In-The-Middle to change DNS answers to route unsuspecting visitors to their phishing, malware or surveillance site with unencrypted DNS. Your ISP, router, network provider may have an ability to track you. So. here comes DNS over HTTPS or DNS over TLS to secure the DNS query.
+Even if you are visiting a site with HTTPS, your DNS query is sent over an unencrypted connection. That means that even if you are any website with HTTPS. Anyone listening to packets on the network still can know you are visiting some websites. It is easy for a Man-In-The-Middle to change DNS answers to route unsuspecting visitors to their phishing, malware, or surveillance site with unencrypted DNS. Your ISP, router, the network provider may have the ability to track you. So. here comes DNS over HTTPS or DNS over TLS to secure the DNS query.
 
 ### Feature
-This app use the iOS 14 new feature DNS over HTTPS and DNS over TLS. 
-First app have DNS over HTTPS and DNS over TLS without any VPN config. Install any VPN may send your all network connection to server.
+This app uses the iOS 14 new feature DNS over HTTPS and DNS over TLS. 
+The First app has DNS over HTTPS and DNS over TLS without any VPN config. Install any VPN that may send your all network connection to the server.
 
 ### Privacy
-This app only secure your DNS query with trust famous service provider. It don't send your other connection to any server. We don't collect any information!! It don't collection any IP or Device ID....etc.
+This app only secures your DNS query with a trust famous service provider. It doesn't send your other connection to any server. We don't collect any information!! doesn't collect any IP or Device ID....etc.
 
 ### Transparent
 Choose the provider that you trust.
-You can choose Google, Cloudflare, AdGuard and other service provider.
+You can choose Google, Cloudflare, AdGuard, and other service providers
 
-1. DNS over HTTPS(DOH) use port 443, like your HTTPS connection.
-2. DNS over TLS(DOT) use port 853.
+1. DNS over HTTPS(DOH) uses port 443, like your HTTPS connection.
+2. DNS over TLS(DOT) uses port 853.
 
 
 You may need to follow steps to enable DNS settings.
-1. Enable the toggle Switch in app.
+1. Enable the toggle switch in the app.
 2. Go to iPhone - Settings - General - VPN & Network - DNS - Select "DNS Security"
 
-If you got connection problem with this app, please try to select other config profile or try to re-enable the app. Some service provider may unavailable in your area due to this problem.
+If you got a connection problem with this app, please try to select other config profiles or try to re-enable the app. Some service providers may unavailable in your area due to this problem.
 
 If you have any suggestions, you can leave a review for us. We will continue to make this app greater.
 
