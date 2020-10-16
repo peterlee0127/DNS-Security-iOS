@@ -7,7 +7,7 @@ Secure your DNS query without touch your network connection.
 
 ### Do you know ? What's DNS over HTTPS/TLS ?
 
-Even if you are visiting a site with HTTPS, your DNS query is sent over an unencrypted connection. That means that even if you are any website with HTTPS. Anyone listening to packets on the network still can know you are visiting some website. It is easy for a Man-In-The-Middle to change DNS answers to route unsuspecting visitors to their phishing, malware or surveillance site with unencrypted DNS. Your ISP, router, network provider may have an ability to track you. So. here is the DNS over HTTPS or DNS over TLS to secure the DNS query.
+Even if you are visiting a site with HTTPS, your DNS query is sent over an unencrypted connection. That means that even if you are any website with HTTPS. Anyone listening to packets on the network still can know you are visiting some website. It is easy for a Man-In-The-Middle to change DNS answers to route unsuspecting visitors to their phishing, malware or surveillance site with unencrypted DNS. Your ISP, router, network provider may have an ability to track you. So. here comes DNS over HTTPS or DNS over TLS to secure the DNS query.
 
 ### Feature
 This app use the iOS 14 new feature DNS over HTTPS and DNS over TLS. 
@@ -20,8 +20,8 @@ This app only secure your DNS query with trust famous service provider. It don't
 Choose trust service provider you want.
 You can choose Google, Cloudflare, AdGuard......etc. DNS over HTTPS/TLS service provider.
 
-DNS over HTTPS(DOH) use port 443, like your HTTPS connection.
-DNS over TLS(DOT) use port 853.
+1. DNS over HTTPS(DOH) use port 443, like your HTTPS connection.
+2. DNS over TLS(DOT) use port 853.
 
 
 You may need to follow steps to enable DNS settings.
