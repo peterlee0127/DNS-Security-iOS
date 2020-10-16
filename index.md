@@ -14,7 +14,7 @@ This app uses the iOS 14 new feature DNS over HTTPS and DNS over TLS.
 The First app has DNS over HTTPS and DNS over TLS without any VPN config. Install any VPN that may send your all network connection to the server.
 
 ### Privacy
-This app only secures your DNS query with a trust famous service provider. It doesn't send your other connection to any server. We don't collect any information!!
+This app only secures your DNS query with a trust service provider. It doesn't send your other connection to any server. We don't collect any information!!
 
 ### Transparent
 Choose the provider that you trust.
