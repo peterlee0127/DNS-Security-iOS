@@ -28,9 +28,9 @@ You may need to follow steps to enable DNS settings.
 1. Enable the toggle switch in the app.
 2. Go to iPhone - Settings - General - VPN & Network - DNS - Select "DNS Security"
 
-If you got a connection problem with this app, please try to select other config profiles or try to re-enable the app. Some service providers may unavailable in your area due to this problem.
+If you got a connection problem with this app, please try to select other config profiles or try to re-enable the app. Some service providers may unavailable in your area.
 
-If you have any suggestions, you can leave a review for us. We will continue to make this app greater.
+If you have any suggestions, you can leave a review for us. We will continue to make this app better.
 
 
 <a href="https://apps.apple.com/us/app/id1533938029?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1411430400&h=ffc277244dfe9331424b96b71b8ae829" alt="Download on the App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
