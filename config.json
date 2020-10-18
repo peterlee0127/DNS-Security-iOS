@@ -45,6 +45,11 @@
         "name": "Quad9-DOH",
         "servers": ["9.9.9.9", "149.112.112.112"],
         "serverName": "https://dns.quad9.net/dns-query"
+    },
+    {
+        "name": "TWNIC-DOH",
+        "servers": ["101.101.101.101"],
+        "serverName": "https://dns.twnic.tw/dns-query"
     }
     ]
 }
