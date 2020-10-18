@@ -2,12 +2,12 @@
     "config":[
     {
         "name": "cloudflare-DOT",
-        "servers": [ "1.1.1.1" ],
+        "servers": [ "1.1.1.1", "1.0.0.1" ],
         "serverName": "cloudflare-dns.com"
     },
     {
         "name": "cloudflare-DOH",
-        "servers": [ "1.1.1.1" ],
+        "servers": [ "1.1.1.1", "1.0.0.1" ],
         "serverName": "https://1.1.1.1/dns-query"
     },
     {
