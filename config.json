@@ -45,6 +45,11 @@
         "name": "Quad9-DOH",
         "servers": ["9.9.9.9", "149.112.112.112"],
         "serverName": "https://dns.quad9.net/dns-query"
+    },
+    {
+        "name": "Chunghwa Telecom Hinet Taiwan-DOH",
+        "servers": ["168.95.192.1", "168.95.1.1"],
+        "serverName": "https://dns.hinet.net/dns-query"
     }
     ]
 }
