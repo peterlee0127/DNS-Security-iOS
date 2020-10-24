@@ -39,7 +39,7 @@
     {
         "name": "AdGuard-DOH",
         "servers": [ "94.140.14.14", "94.140.15.15"],
-        "serverName": "https://dns.adguard.com/dns-query"
+        "serverName": "https://dns.adguard.com/dns-query",
         "group": "adguard"
     },
     {
