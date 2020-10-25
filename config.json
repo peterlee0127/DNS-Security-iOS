@@ -65,12 +65,6 @@
         "servers": ["45.67.219.208", "2a04:bdc7:100:70::abcd"],
         "serverName": "https://doh.westus.pi-dns.com/dns-query",
         "group": "pi-dns"
-    },
-    {
-        "name": "Pi-dns (East USA)-DOH",
-        "servers": ["185.213.26.187", "2a0d:5600:33:3::abcd"],
-        "serverName": "https://doh.eastus.pi-dns.com/dns-query",
-        "group": "pi-dns"
     }
     ]
 }
