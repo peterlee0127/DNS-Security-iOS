@@ -55,7 +55,7 @@
         "group": "quad9"
     },
     {
-        "name": "Chunghwa Telecom Hinet (Taiwan)-DOH",
+        "name": "Chunghwa Telecom Hinet(Taiwan)-DOH",
         "servers": ["168.95.192.1", "168.95.1.1"],
         "serverName": "https://dns.hinet.net/dns-query",
         "group": "cht"
