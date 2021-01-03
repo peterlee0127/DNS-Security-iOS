@@ -61,6 +61,12 @@
         "group": "cht"
     },
     {
+        "name": "twnic (Taiwan)-DOT",
+        "servers": ["101.101.101.101"],
+        "serverName": "",
+        "group": "twnic"
+    },
+    {
         "name": "Pi-dns (West USA)-DOH",
         "servers": ["45.67.219.208", "2a04:bdc7:100:70::abcd"],
         "serverName": "https://doh.westus.pi-dns.com/dns-query",
