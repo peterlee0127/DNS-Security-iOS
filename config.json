@@ -2,13 +2,13 @@
     "config":[
     {
         "name": "cloudflare-DOT",
-        "servers": [ "1.1.1.1", "1.0.0.1" ],
+        "servers": [ "1.1.1.1", "1.0.0.1", "2606:4700:4700::1111", "2606:4700:4700::1001" ],
         "serverName": "cloudflare-dns.com",
         "group": "cloudflare"
     },
     {
         "name": "cloudflare-DOH",
-        "servers": [ "1.1.1.1", "1.0.0.1" ],
+        "servers": [ "1.1.1.1", "1.0.0.1", "2606:4700:4700::1111", "2606:4700:4700::1001" ],
         "serverName": "https://1.1.1.1/dns-query",
         "group": "cloudflare"
     },
@@ -26,25 +26,25 @@
     },
     {
         "name": "google-DOT",
-        "servers": [ "8.8.8.8", "8.8.4.4"],
+        "servers": [ "8.8.8.8", "8.8.4.4", "2001:4860:4860::8888", "2001:4860:4860::8844"],
         "serverName": "dns.google",
         "group": "google"
     },
     {
         "name": "google-DOH",
-        "servers": [ "8.8.8.8", "8.8.4.4"],
+        "servers": [ "8.8.8.8", "8.8.4.4", "2001:4860:4860::8888", "2001:4860:4860::8844"],
         "serverName": "https://dns.google/dns-query",
         "group": "google"
     },
     {
         "name": "AdGuard-DOH",
-        "servers": [ "94.140.14.14", "94.140.15.15"],
+        "servers": [ "94.140.14.14", "94.140.15.15", "2a10:50c0::ad1:ff", "2a10:50c0::ad2:ff"],
         "serverName": "https://dns.adguard.com/dns-query",
         "group": "adguard"
     },
     {
         "name": "AdGuard-DOT",
-        "servers": [ "94.140.14.14", "94.140.15.15"],
+        "servers": [ "94.140.14.14", "94.140.15.15", "2a10:50c0::ad1:ff", "2a10:50c0::ad2:ff"],
         "serverName": "dns.adguard.com",
         "group": "adguard"
     },
