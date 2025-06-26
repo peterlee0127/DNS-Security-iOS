@@ -50,7 +50,7 @@
     },
     {
         "name": "Quad9-DOH",
-        "servers": ["9.9.9.9", "149.112.112.112"],
+        "servers": ["9.9.9.9", "149.112.112.112", "2620:fe::fe", "2620:fe::fe:9"],
         "serverName": "https://dns.quad9.net/dns-query",
         "group": "quad9"
     },
