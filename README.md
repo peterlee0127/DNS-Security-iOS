@@ -1,40 +1,52 @@
+---
+title: DNS Security for iOS
+description: Private DNS with DNS over HTTPS and DNS over TLS on iPhone, iPad, and Mac.
+---
+
 # DNS Security
 
-<div style="text-align:center"><a href='https://apps.apple.com/us/app/id1533938029'><img src="mac_logo.png" width='200px' style='alignment:center'></a></div>
+Secure DNS for iOS and Mac with DNS over HTTPS and DNS over TLS. DNS Security protects DNS lookups without routing all traffic through a VPN server.
 
-#### The First app uses iOS 14 new feature DNS over HTTPS or DOT without installing any VPN config!!
-Secure your DNS query without touch your network connection.
+## App Store
 
-### Do you know? What's DNS over HTTPS/TLS?
+- [DNS Security Lite](https://apps.apple.com/us/app/id1537782072)
+- [DNS Security Pro](https://apps.apple.com/us/app/id1533938029)
 
-Even if you are visiting a site with HTTPS, your DNS query is sent over an unencrypted connection. That means that even if you are viewing any website with HTTPS. Anyone listening to packets on the network still can know you are visiting some websites. It is easy for a Man-In-The-Middle to change DNS answers to route unsuspecting visitors to their phishing, malware, or surveillance site with unencrypted DNS. Your ISP, router, the network provider may have the ability to track you. So. here comes DNS over HTTPS or DNS over TLS to secure the DNS query.
+## Current Features
 
-### Feature
-This app uses the iOS 14 new feature DNS over HTTPS and DNS over TLS. 
-The First app has DNS over HTTPS and DNS over TLS without any VPN config. Install any VPN that may send your all network connection to the server.
+- One-tap encrypted DNS setup from the Connect tab
+- Built-in DNS profiles for trusted providers
+- Custom DNS profiles for DoH and DoT
+- Wi-Fi SSID enable/disable rules
+- DNS status verification
+- Shortcuts and URL scheme profile switching for Pro users
+- In-app language selection with restart notice
+- Lite with Pro unlock, plus a separate Pro app with Pro included
 
-### Privacy
-This app only secures your DNS query with a trust service provider. It doesn't send your other connection to any server. We don't collect any information!!
+## Screenshots
 
-### Transparent
-Choose the provider that you trust.
-You can choose Google, Cloudflare, AdGuard, and other service providers
+![Secure DNS in one tap](assets/screenshots/01-secure-dns-one-tap.png)
+![Pro included](assets/screenshots/02-pro-included.png)
+![Lite upgrade path](assets/screenshots/03-free-requires-pro-iap.png)
+![Custom DNS profiles](assets/screenshots/04-create-custom-dns-profiles.png)
+![Verify DNS status](assets/screenshots/05-verify-dns-status.png)
+![Pro-only tools](assets/screenshots/06-create-custom-dns-profiles-need-pro.png)
 
-1. DNS over HTTPS(DOH) uses port 443, like your HTTPS connection.
-2. DNS over TLS(DOT) uses port 853.
+## How to Enable
 
+1. Open DNS Security and choose a DNS profile.
+2. Enable the switch in the Connect tab.
+3. Open iOS Settings.
+4. Go to General - VPN & Network - DNS.
+5. Select DNS Security.
 
-You may need to follow steps to enable DNS settings.
-1. Enable the toggle switch in the app.
-2. Go to iPhone - Settings - General - VPN & Network - DNS - Select "DNS Security"
+On Mac, enable the DNS proxy in System Settings - Network - VPN & Filters - Filters & Proxies.
 
-If you got a connection problem with this app, please try to select other config profiles or try to re-enable the app. Some service providers may unavailable in your area.
+## Privacy
 
-If you have any suggestions, you can leave a review for us. We will continue to make this app better.
+DNS Security only configures DNS resolution through the provider you choose. It does not route all traffic through an app server, and it does not collect your browsing data.
 
+## More
 
-## Pro 
-<a href="https://apps.apple.com/us/app/id1533938029?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1411430400&h=ffc277244dfe9331424b96b71b8ae829" alt="Download on the App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
-
-## Lite 
-<a href="https://apps.apple.com/us/app/id1537782072?itsct=apps_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1411430400&h=ffc277244dfe9331424b96b71b8ae829" alt="Download on the App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+- [What is DNS over HTTPS/TLS?](dohdot)
+- [Privacy Policy](policy)
