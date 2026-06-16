@@ -9,7 +9,7 @@
     {
         "name": "cloudflare-DOH",
         "servers": [ "1.1.1.1", "1.0.0.1", "2606:4700:4700::1111", "2606:4700:4700::1001" ],
-        "serverName": "https://1.1.1.1/dns-query",
+        "serverName": "https://cloudflare-dns.com/dns-query",
         "group": "cloudflare"
     },
     {
@@ -61,9 +61,15 @@
         "group": "cht"
     },
     {
+        "name": "twnic (Taiwan)-DOH",
+        "servers": ["101.101.101.101"],
+        "serverName": "https://dns.twnic.tw/dns-query",
+        "group": "twnic"
+    },
+    {
         "name": "twnic (Taiwan)-DOT",
         "servers": ["101.101.101.101"],
-        "serverName": "",
+        "serverName": "dns.twnic.tw",
         "group": "twnic"
     },
     {
