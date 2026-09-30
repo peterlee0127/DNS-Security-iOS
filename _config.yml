@@ -1,3 +1,39 @@
-title: DNS Security for iOS
-description: The First app with DNS over HTTPS/TLS in iOS 14. 
+title: DNS Security
+tagline: Encrypted DNS over HTTPS and TLS for iPhone, iPad and Mac
+description: DNS Security enables encrypted DNS over HTTPS (DoH) and DNS over TLS (DoT) on iPhone, iPad and Mac without routing your traffic through a VPN server.
+url: https://dns-security.peterlee.app
+baseurl: ""
+lang: en-US
 theme: jekyll-theme-midnight
+logo: /assets/icons/dns-security-pro.png
+
+author:
+  name: Peter Lee
+
+twitter:
+  card: summary
+
+social:
+  name: DNS Security
+  links:
+    - https://apps.apple.com/us/app/id1533938029
+    - https://apps.apple.com/us/app/id1537782072
+    - https://github.com/peterlee0127/DNS-Security-iOS
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/icons/dns-security-pro.png
+
+# README.md duplicates the home page content, so keep it off the site.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

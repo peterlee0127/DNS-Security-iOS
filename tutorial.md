@@ -1,9 +1,9 @@
 ---
-title: Enable DNS Security
-description: How to enable DNS Security on iOS and Mac.
+title: How to Enable DNS Security
+description: Step-by-step guide to turn on encrypted DNS over HTTPS or DNS over TLS with DNS Security on iPhone, iPad and Mac.
 ---
 
-# Enable DNS Security
+# How to Enable DNS Security
 
 ## iPhone and iPad
 

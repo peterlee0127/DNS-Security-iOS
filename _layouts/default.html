@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/icons/dns-security.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/assets/icons/dns-security.png' | relative_url }}">
+    {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
+    <meta name="theme-color" content="#151515">
+    <meta name="apple-itunes-app" content="app-id=1537782072">
+    {% if page.url == "/" %}
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DNS Security Lite",
+        "operatingSystem": "iOS, iPadOS, macOS",
+        "applicationCategory": "UtilitiesApplication",
+        "description": {{ site.description | jsonify }},
+        "image": {{ '/assets/icons/dns-security.png' | absolute_url | jsonify }},
+        "url": "https://apps.apple.com/us/app/id1537782072",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "DNS Security Pro",
+        "operatingSystem": "iOS, iPadOS, macOS",
+        "applicationCategory": "UtilitiesApplication",
+        "description": {{ site.description | jsonify }},
+        "image": {{ '/assets/icons/dns-security-pro.png' | absolute_url | jsonify }},
+        "url": "https://apps.apple.com/us/app/id1533938029"
+      }
+    ]
+    </script>
+    {% endif %}
+    <style>
+      #title .site-title {
+        color: #fff;
+        font-size: 40px;
+        line-height: 36px;
+        margin: 0 0 10px;
+      }
+      #title .site-title a {
+        color: inherit;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <ul>
+            <li class="fork"><a href="{{ site.github.repository_url | default: 'https://github.com/peterlee0127/DNS-Security-iOS' }}">View On GitHub</a></li>
+          </ul>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <header id="title">
+          {% comment %} Each page provides its own <h1>; the site name is not a heading so there is only one <h1> per page. {% endcomment %}
+          <p class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
+          <p>{{ site.tagline }}</p>
+          <hr>
+          <div class="credits left" role="navigation">
+            <a href="{{ '/' | relative_url }}">Home</a> &middot;
+            <a href="{{ '/tutorial.html' | relative_url }}">How to Enable</a> &middot;
+            <a href="{{ '/dohdot.html' | relative_url }}">DoH &amp; DoT</a> &middot;
+            <a href="{{ '/policy.html' | relative_url }}">Privacy Policy</a>
+          </div>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham" rel="nofollow">mattgraham</a></span>
+        </header>
+
+        <main>
+        {{ content }}
+        </main>
+
+      </section>
+
+    </div>
+  </body>
+</html>

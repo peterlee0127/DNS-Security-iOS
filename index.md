@@ -1,6 +1,6 @@
 ---
-title: DNS Security for iOS
-description: Private DNS with DNS over HTTPS and DNS over TLS on iPhone, iPad, and Mac.
+title: DNS Security
+description: DNS Security enables encrypted DNS over HTTPS (DoH) and DNS over TLS (DoT) on iPhone, iPad and Mac without routing your traffic through a VPN server.
 ---
 
 <style>
@@ -79,10 +79,10 @@ description: Private DNS with DNS over HTTPS and DNS over TLS on iPhone, iPad, a
 
 <section class="hero">
   <div class="hero-icons">
-    <img src="assets/icons/dns-security.png" alt="DNS Security icon">
-    <img src="assets/icons/dns-security-pro.png" alt="DNS Security Pro icon">
+    <img src="assets/icons/dns-security.png" alt="DNS Security Lite app icon" width="96" height="96">
+    <img src="assets/icons/dns-security-pro.png" alt="DNS Security Pro app icon" width="96" height="96">
   </div>
-  <h1>DNS Security</h1>
+  <h1>DNS Security: Encrypted DNS for iPhone, iPad and Mac</h1>
   <p>Secure DNS for iOS and Mac with DNS over HTTPS and DNS over TLS. Keep DNS queries encrypted without routing all traffic through a VPN server.</p>
   <div class="app-links">
     <a class="app-link" href="https://apps.apple.com/us/app/id1537782072">Download DNS Security Lite</a>
@@ -127,27 +127,27 @@ DNS Security configures Apple's system DNS settings to use encrypted DNS resolve
 
 <div class="screenshot-grid">
   <figure>
-    <img src="assets/screenshots/01-secure-dns-one-tap.png" alt="DNS Security Connect screen">
+    <img src="assets/screenshots/01-secure-dns-one-tap.png" alt="DNS Security Connect screen" loading="lazy">
     <figcaption>Secure DNS in one tap</figcaption>
   </figure>
   <figure>
-    <img src="assets/screenshots/02-pro-included.png" alt="DNS Security Pro included screen">
+    <img src="assets/screenshots/02-pro-included.png" alt="DNS Security Pro included screen" loading="lazy">
     <figcaption>Pro included</figcaption>
   </figure>
   <figure>
-    <img src="assets/screenshots/03-free-requires-pro-iap.png" alt="DNS Security Lite Pro upgrade screen">
+    <img src="assets/screenshots/03-free-requires-pro-iap.png" alt="DNS Security Lite Pro upgrade screen" loading="lazy">
     <figcaption>Lite upgrade path</figcaption>
   </figure>
   <figure>
-    <img src="assets/screenshots/04-create-custom-dns-profiles.png" alt="DNS Security custom DNS profiles screen">
+    <img src="assets/screenshots/04-create-custom-dns-profiles.png" alt="DNS Security custom DNS profiles screen" loading="lazy">
     <figcaption>Custom DNS profiles</figcaption>
   </figure>
   <figure>
-    <img src="assets/screenshots/05-verify-dns-status.png" alt="DNS Security status screen">
+    <img src="assets/screenshots/05-verify-dns-status.png" alt="DNS Security status screen" loading="lazy">
     <figcaption>Verify DNS status</figcaption>
   </figure>
   <figure>
-    <img src="assets/screenshots/06-create-custom-dns-profiles-need-pro.png" alt="DNS Security Pro-only custom DNS profile screen">
+    <img src="assets/screenshots/06-create-custom-dns-profiles-need-pro.png" alt="DNS Security Pro-only custom DNS profile screen" loading="lazy">
     <figcaption>Pro-only tools</figcaption>
   </figure>
 </div>
@@ -174,5 +174,6 @@ DNS Security only configures DNS resolution through the provider you choose. It 
 
 ## Learn More
 
-- [What is DNS over HTTPS/TLS?](dohdot)
-- [Privacy Policy](policy)
+- [How to enable DNS Security on iPhone, iPad and Mac](tutorial.html)
+- [What is DNS over HTTPS/TLS?](dohdot.html)
+- [Privacy Policy](policy.html)
