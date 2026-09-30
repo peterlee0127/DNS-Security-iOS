@@ -4,8 +4,13 @@ description: DNS Security enables encrypted DNS over HTTPS (DoH) and DNS over TL
 url: https://dns-security.peterlee.app
 baseurl: ""
 lang: en-US
-theme: jekyll-theme-midnight
+theme: null
 logo: /assets/icons/dns-security-pro.png
+
+app_store:
+  lite: https://apps.apple.com/us/app/id1537782072
+  pro: https://apps.apple.com/us/app/id1533938029
+  lite_id: "1537782072"
 
 author:
   name: Peter Lee
@@ -28,7 +33,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: default
+      layout: page
       image: /assets/icons/dns-security-pro.png
 
 # README.md duplicates the home page content, so keep it off the site.

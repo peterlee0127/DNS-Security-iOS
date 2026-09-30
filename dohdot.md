@@ -1,18 +1,51 @@
 ---
 title: What is DNS over HTTPS and DNS over TLS?
-description: Learn how DNS over HTTPS (DoH) and DNS over TLS (DoT) encrypt DNS queries to protect your privacy, and how DNS Security enables them on iPhone, iPad and Mac.
+description: Learn how DNS over HTTPS (DoH) and DNS over TLS (DoT) encrypt DNS queries to protect your privacy, how they differ, and how to use them on iPhone, iPad and Mac.
+eyebrow: Learn
+lead: Encrypted DNS keeps the websites you visit from being exposed or tampered with on the network. Here is how DoH and DoT work.
 ---
 
-# What is DNS over HTTPS and DNS over TLS?
+## Why DNS needs encryption
 
-## DNS over HTTPS
+Before your device can connect to a website or app server, it asks a **DNS resolver** to translate a name like `example.com` into an IP address. Traditional DNS sends these questions and answers in plain text over port 53.
 
-**DNS over HTTPS** (**DoH**) is a protocol for performing remote [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System) (DNS) resolution via the [HTTPS](https://en.wikipedia.org/wiki/HTTPS) protocol. A goal of the method is to increase user privacy and security by preventing eavesdropping and manipulation of DNS data by [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attacks)[[1\]](https://en.wikipedia.org/wiki/DNS_over_HTTPS#cite_note-register-1) by using the HTTPS protocol to [encrypt](https://en.wikipedia.org/wiki/Encrypt) the data between the DoH client and the DoH-based [DNS resolver](https://en.wikipedia.org/wiki/DNS_resolver).
+That means anyone between you and the resolver, such as a public Wi-Fi operator or an internet provider, can:
 
-## DNS over TLS
+- **see** every domain you look up, and
+- **change** the answers to send you to a different server (DNS spoofing).
 
-**DNS over TLS** (**DoT**) is a [security protocol](https://en.wikipedia.org/wiki/Security_protocol) for encrypting and wrapping [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System) (DNS) queries and answers via the [Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) (TLS) protocol. The goal of the method is to increase user privacy and security by preventing eavesdropping and manipulation of DNS data via [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attacks).
+Encrypted DNS protocols solve this by wrapping DNS traffic in the same kind of encryption that protects websites.
+
+## DNS over HTTPS (DoH)
+
+**DNS over HTTPS** sends DNS queries inside regular HTTPS requests to a resolver URL such as `https://cloudflare-dns.com/dns-query`. It is defined in [RFC 8484](https://www.rfc-editor.org/rfc/rfc8484).
+
+Because DoH uses port 443, like all other secure web traffic, it blends in with normal browsing and works on most networks.
+
+## DNS over TLS (DoT)
+
+**DNS over TLS** sends DNS queries over a dedicated, encrypted TLS connection to a resolver hostname such as `dns.google`. It is defined in [RFC 7858](https://www.rfc-editor.org/rfc/rfc7858).
+
+DoT uses its own port, 853, which makes encrypted DNS easy to identify and manage on a network.
+
+## DoH vs DoT at a glance
+
+<div class="table-wrap" markdown="1">
+
+| | DNS over HTTPS | DNS over TLS |
+|---|---|---|
+| Encryption | TLS via HTTPS | TLS |
+| Port | 443 | 853 |
+| Server setting | URL, e.g. `https://dns.google/dns-query` | Hostname, e.g. `dns.google` |
+| Looks like | Normal web traffic | Dedicated DNS traffic |
+| Best for | Networks that block uncommon ports | Clean separation of DNS traffic |
+
+</div>
+
+Both protocols give you the same core protection: nobody on the network can read or alter your DNS lookups. If one does not work on a particular network, try the other.
 
 ## Use DoH and DoT on iPhone, iPad and Mac
 
-[DNS Security](/) sets up DNS over HTTPS or DNS over TLS with Apple's built-in encrypted DNS support. See [how to enable DNS Security](tutorial.html) to get started.
+Since iOS 14 and macOS 11, Apple devices support encrypted DNS system-wide. [DNS Security](/) sets this up for you with profiles for trusted providers such as Cloudflare, Google Public DNS, AdGuard DNS and Quad9, so every app on your device benefits without a VPN.
+
+[See how to enable DNS Security →](tutorial.html)
