@@ -1,0 +1,12 @@
+- q: Is DNS Security a VPN?
+  a: No. DNS Security uses Apple's built-in encrypted DNS settings, so only DNS lookups are sent to the resolver you choose. The rest of your traffic goes directly to the internet as usual and is never routed through an app server.
+- q: What is the difference between DNS over HTTPS and DNS over TLS?
+  a: Both encrypt DNS queries between your device and the DNS resolver. DNS over HTTPS (DoH) sends queries inside regular HTTPS traffic on port 443, while DNS over TLS (DoT) uses a dedicated TLS connection on port 853.
+- q: Which DNS providers are built in?
+  a: DNS Security includes profiles for Cloudflare (including its malware and family filters), Google Public DNS, AdGuard DNS, Quad9, Chunghwa Telecom HiNet, TWNIC and Pi-DNS. Pro users can also add their own DoH or DoT servers.
+- q: What is the difference between DNS Security Lite and DNS Security Pro?
+  a: DNS Security Lite is free and includes the core encrypted DNS workflow; Pro features can be unlocked with an in-app purchase. DNS Security Pro is a separate paid app with every Pro feature included, such as custom DNS profiles, Wi-Fi SSID rules and switching profiles from Shortcuts.
+- q: Why is DNS not active after I turn it on?
+  a: iOS asks you to confirm the DNS profile. Open Settings, go to General, VPN & Network, DNS and select DNS Security. On Mac, enable DNS Security in System Settings, Network, VPN & Filters, Filters & Proxies.
+- q: Does DNS Security collect my data?
+  a: No. DNS Security does not collect any device or user information, and it does not see or log your browsing. Your DNS queries go only to the DNS provider you select.

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+  {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3fafa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c1a1f" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id={{ site.app_store.lite_id }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  {% if page.url == "/" %}{% include structured-data.html %}{% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/icons/dns-security-256.webp' | relative_url }}" alt="" width="32" height="32">
+        <span>{{ site.title }}</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="{{ '/#features' | relative_url }}">Features</a>
+        <a href="{{ '/tutorial.html' | relative_url }}"{% if page.url == "/tutorial.html" %} aria-current="page"{% endif %}>How to Enable</a>
+        <a href="{{ '/dohdot.html' | relative_url }}"{% if page.url == "/dohdot.html" %} aria-current="page"{% endif %}>DoH &amp; DoT</a>
+        <a href="{{ '/privacy.html' | relative_url }}"{% if page.url == "/privacy.html" or page.url == "/policy.html" %} aria-current="page"{% endif %}>Privacy</a>
+      </nav>
+      <a class="btn btn-small" href="{{ '/#download' | relative_url }}">Download</a>
+    </div>
+  </header>
+
+  <main id="main">
+{{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="{{ '/assets/icons/dns-security-256.webp' | relative_url }}" alt="" width="40" height="40" loading="lazy">
+        <div>
+          <strong>{{ site.title }}</strong>
+          <p>{{ site.tagline }}</p>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <div>
+          <h2>App</h2>
+          <a href="{{ site.app_store.lite }}">DNS Security Lite</a>
+          <a href="{{ site.app_store.pro }}">DNS Security Pro</a>
+        </div>
+        <div>
+          <h2>Learn</h2>
+          <a href="{{ '/tutorial.html' | relative_url }}">How to Enable</a>
+          <a href="{{ '/dohdot.html' | relative_url }}">What is DoH &amp; DoT?</a>
+          <a href="{{ '/#faq' | relative_url }}">FAQ</a>
+        </div>
+        <div>
+          <h2>About</h2>
+          <a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a>
+          <a href="https://github.com/peterlee0127/DNS-Security-iOS">GitHub</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2020&ndash;{{ site.time | date: '%Y' }} {{ site.author.name }}. iPhone, iPad and Mac are trademarks of Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>

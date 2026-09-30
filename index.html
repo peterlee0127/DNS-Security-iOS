@@ -1,0 +1,183 @@
+---
+layout: default
+title: DNS Security
+description: DNS Security enables encrypted DNS over HTTPS (DoH) and DNS over TLS (DoT) on iPhone, iPad and Mac without routing your traffic through a VPN server.
+screenshots:
+  - file: 01-secure-dns-one-tap
+    caption: Secure DNS in one tap
+    alt: DNS Security Connect screen showing encrypted DNS enabled with the AdGuard DNS over TLS profile
+  - file: 04-create-custom-dns-profiles
+    caption: Custom DoH and DoT profiles
+    alt: Screen for adding a custom DNS over HTTPS or DNS over TLS profile
+  - file: 05-verify-dns-status
+    caption: Verify your DNS status
+    alt: DNS Security Status screen with the active DNS profile, protocol and network status
+  - file: 02-pro-included
+    caption: DNS Security Pro, everything included
+    alt: DNS Security Pro screen showing all Pro features included
+  - file: 03-free-requires-pro-iap
+    caption: Lite with optional Pro upgrade
+    alt: DNS Security Lite screen offering Pro features as an in-app purchase
+  - file: 06-create-custom-dns-profiles-need-pro
+    caption: Advanced tools for Pro
+    alt: DNS Security Lite showing custom DNS profiles as a Pro feature
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">For iPhone, iPad and Mac</p>
+      <h1>Encrypted DNS for every app on your device</h1>
+      <p class="lead">DNS Security turns on DNS over HTTPS or DNS over TLS system-wide in one tap. Your DNS lookups stay private and tamper-proof, and the rest of your traffic never goes through a VPN server.</p>
+      <div class="cta-row">
+        <a class="btn" href="{{ site.app_store.lite }}">Get DNS Security Lite</a>
+        <a class="btn btn-secondary" href="{{ site.app_store.pro }}">Get DNS Security Pro</a>
+      </div>
+      <ul class="hero-points">
+        <li>No VPN, no traffic routing</li>
+        <li>No data collection</li>
+        <li>Built on Apple's encrypted DNS</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <img src="{{ '/assets/screenshots/01-secure-dns-one-tap.webp' | relative_url }}" alt="DNS Security app with encrypted DNS enabled" width="621" height="1344" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Everything you need for private DNS</h2>
+      <p>Pick a trusted resolver, switch it on, and every app on your device resolves names over an encrypted connection.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="card">
+        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v10M6.3 6.3a8 8 0 1 0 11.4 0"/></svg></div>
+        <h3>One-tap encrypted DNS</h3>
+        <p>Turn on DNS over HTTPS or DNS over TLS from the Connect tab, then confirm the DNS profile in Settings.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+        <h3>Trusted DNS providers</h3>
+        <p>Ready-made profiles for Cloudflare, Google Public DNS, AdGuard DNS, Quad9 and more, including malware and family filters.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+        <h3>Custom DNS profiles <span class="tag">Pro</span></h3>
+        <p>Add your own DoH or DoT server with built-in validation for server addresses and server names.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 19.5h.01"/></svg></div>
+        <h3>Wi-Fi SSID rules <span class="tag">Pro</span></h3>
+        <p>Decide which Wi-Fi networks use encrypted DNS, for example off at home and on everywhere else.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg></div>
+        <h3>DNS status check</h3>
+        <p>See the active DNS profile, protocol, proxy state and network status at a glance.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Shortcuts support <span class="tag">Pro</span></h3>
+        <p>Switch DNS profiles from Shortcuts or other apps with the custom URL scheme and automate your setup.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="screenshots-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="screenshots-title">A closer look</h2>
+      <p>A clean, native interface designed for iOS, iPadOS and macOS.</p>
+    </div>
+  </div>
+  <div class="shots" tabindex="0" aria-label="App screenshots">
+    {% for shot in page.screenshots %}
+    <figure>
+      <img src="{{ '/assets/screenshots/' | append: shot.file | append: '.webp' | relative_url }}" alt="{{ shot.alt }}" width="621" height="1344" loading="lazy" decoding="async">
+      <figcaption>{{ shot.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="how-it-works" class="section">
+  <div class="container split">
+    <div>
+      <h2>How DNS Security protects you</h2>
+      <p>Every time you open a website or an app connects to a server, your device first asks a DNS resolver for its address. Normal DNS sends these questions in plain text, so anyone on the network, including public Wi-Fi operators and internet providers, can read or change them.</p>
+      <p>DNS Security configures Apple's system encrypted DNS so these lookups are sent over <a href="{{ '/dohdot.html' | relative_url }}">DNS over HTTPS or DNS over TLS</a> to the provider you choose. Only DNS is affected, so your speed and your other traffic stay exactly as they were.</p>
+    </div>
+    <ol class="steps">
+      <li><strong>Choose a DNS profile</strong><span>Pick a built-in provider in the Config tab or add your own.</span></li>
+      <li><strong>Turn it on</strong><span>Enable the switch in the Connect tab.</span></li>
+      <li><strong>Confirm in Settings</strong><span>Go to General &rsaquo; VPN &amp; Network &rsaquo; DNS and select DNS Security.</span></li>
+    </ol>
+  </div>
+  <div class="container center">
+    <a class="text-link" href="{{ '/tutorial.html' | relative_url }}">Full setup guide for iPhone, iPad and Mac &rarr;</a>
+  </div>
+</section>
+
+<section id="download" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Choose your version</h2>
+      <p>Both apps use the same encrypted DNS engine. Pick the one that fits you.</p>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <img src="{{ '/assets/icons/dns-security-256.webp' | relative_url }}" alt="DNS Security Lite app icon" width="72" height="72" loading="lazy">
+        <h3>DNS Security Lite</h3>
+        <p class="plan-price">Free, with optional Pro upgrade</p>
+        <ul class="checklist">
+          <li>One-tap DNS over HTTPS and DNS over TLS</li>
+          <li>Built-in trusted DNS providers</li>
+          <li>DNS status check</li>
+          <li>Unlock Pro features with an in-app purchase</li>
+        </ul>
+        <a class="btn btn-secondary btn-block" href="{{ site.app_store.lite }}">Download Lite on the App Store</a>
+      </article>
+      <article class="plan plan-featured">
+        <img src="{{ '/assets/icons/dns-security-pro-256.webp' | relative_url }}" alt="DNS Security Pro app icon" width="72" height="72" loading="lazy">
+        <h3>DNS Security Pro</h3>
+        <p class="plan-price">One-time purchase, everything included</p>
+        <ul class="checklist">
+          <li>Everything in Lite</li>
+          <li>Custom DoH and DoT profiles</li>
+          <li>Wi-Fi SSID rules</li>
+          <li>Shortcuts and URL scheme profile switching</li>
+        </ul>
+        <a class="btn btn-block" href="{{ site.app_store.pro }}">Download Pro on the App Store</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container narrow">
+    <div class="section-head">
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq">
+      {% for item in site.data.faq %}
+      <details>
+        <summary>{{ item.q }}</summary>
+        <p>{{ item.a }}</p>
+      </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container center">
+    <h2>Make your DNS private today</h2>
+    <p>Set up encrypted DNS on your iPhone, iPad or Mac in under a minute.</p>
+    <div class="cta-row center">
+      <a class="btn" href="{{ site.app_store.lite }}">Get DNS Security Lite</a>
+      <a class="btn btn-secondary" href="{{ site.app_store.pro }}">Get DNS Security Pro</a>
+    </div>
+  </div>
+</section>

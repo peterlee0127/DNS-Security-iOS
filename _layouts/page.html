@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="page-hero">
+  <div class="container narrow">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.heading | default: page.title }}</h1>
+    {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+  </div>
+</div>
+<article class="container narrow prose">
+{{ content }}
+</article>

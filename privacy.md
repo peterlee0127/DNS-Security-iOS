@@ -1,9 +1,7 @@
 ---
 title: Privacy Policy
 description: Privacy policy for DNS Security on iPhone, iPad and Mac. DNS Security does not collect any user or device information.
-# Kept at its original URL for existing links (e.g. the App Store); /privacy is the canonical page.
-canonical_url: https://dns-security.peterlee.app/privacy.html
-sitemap: false
+permalink: /privacy.html
 eyebrow: Legal
 lead: DNS Security does not collect any of your data.
 ---

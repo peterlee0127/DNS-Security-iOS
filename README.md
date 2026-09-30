@@ -48,5 +48,6 @@ DNS Security only configures DNS resolution through the provider you choose. It 
 
 ## More
 
-- [What is DNS over HTTPS/TLS?](dohdot)
-- [Privacy Policy](policy)
+- [Website](https://dns-security.peterlee.app/)
+- [What is DNS over HTTPS/TLS?](https://dns-security.peterlee.app/dohdot.html)
+- [Privacy Policy](https://dns-security.peterlee.app/privacy.html)
